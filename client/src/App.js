@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-       
+        
         <ProductList/>
         <Rating stars="1"/>
         <Rating stars="2"/>
@@ -24,7 +24,7 @@ function App() {
         <Rating stars="4"/>
         <Rating stars="5"/>
         <Rating stars="0"/>
-     
+  
       </header>
     </div>
   );
