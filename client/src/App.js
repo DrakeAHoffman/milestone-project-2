@@ -1,11 +1,6 @@
 import axios from "axios";
-<<<<<<< HEAD
-import ProductList from "./components/ProductList";
-
-=======
 import Ratings from './components/Ratings'
 import Rating from './components/Rating'
->>>>>>> adb309f199412e01f5f535e79a220e7b963d4045
 
 import logo from './logo.svg';
 import './App.css';
