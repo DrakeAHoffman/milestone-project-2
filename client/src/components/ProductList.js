@@ -4,9 +4,9 @@ const ProductList = () => {
   const products = [
     {
       id: 1,
-      name: 'Product 1',
-      price: 19.99,
-      description: 'Description of Product 1',
+      name: 'Apple MacBook Pro',
+      price: 4000.00,
+      description: ''
     },
     {
       id: 2,
