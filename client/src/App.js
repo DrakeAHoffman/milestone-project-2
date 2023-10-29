@@ -1,29 +1,25 @@
-import axios from "axios";
-import ProductList from './components/ProductList';
 
-//import Ratings from './components/Ratings'
-import Rating from './components/Rating'
+
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import 'Routes' instead of 'Switch'
+import Home from './components/home';
+import MacBookPage from './MacBookPage';
 
 import logo from './logo.svg';
 import './App.css';
-//import { Component } from "react";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <ProductList/>
-        <Rating stars="1"/>
-        <Rating stars="2"/>
-        <Rating stars="3"/>
-        <Rating stars="4"/>
-        <Rating stars="5"/>
-        <Rating stars="0"/>
-  
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes> {/* Use 'Routes' instead of 'Switch' */}
+          <Route path="/" element={<Home />} />
+          <Route path="/macbooks" element={<MacBookPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

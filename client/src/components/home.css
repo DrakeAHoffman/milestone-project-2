@@ -1,0 +1,92 @@
+/* Home.css */
+
+/* Global styles for the entire homepage */
+.apple-homepage {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  
+  .explore-button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .explore-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  /* Remove bullet points from unordered lists (<ul>) */
+ul {
+    list-style: none;
+  }
+  
+  /* Remove numbers from ordered lists (<ol>) */
+  ol {
+    list-style: none;
+  }
+  
+  /* To style specific lists or list items */
+  ul.custom-list {
+    list-style: none;
+  }
+  
+  li.custom-item {
+    list-style: none;
+  }
+  
