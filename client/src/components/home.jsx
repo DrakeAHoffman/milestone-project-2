@@ -23,23 +23,14 @@ const Home = () => {
       <header className="header">
         <nav className="navbar">
           <ul className="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">MacBooks</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Support</a></li>
+          <li><Link to="/">Home</Link></li>
+            <li><Link to="/macbooks">MacBooks</Link></li>
           </ul>
         </nav>
       </header>
 
       <div>
-      <header>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/macbooks">MacBooks</Link></li>
-          </ul>
-        </nav>
-      </header>
+     
       {/* Rest of your content */}
     </div>
 
