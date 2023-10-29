@@ -20,6 +20,12 @@ const ProductList = () => {
       price: 39.99,
       description: 'Description of Product 3',
     },
+    {
+      id: 4,
+      name: 'Product 3',
+      price: 39.99,
+      description: 'Description of Product 3',
+    },
   ];
 
   return (

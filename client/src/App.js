@@ -1,5 +1,6 @@
 import axios from "axios";
-
+import ProductList from "./components/ProductList";
+import Show from "./components/Ratings";
 
 import logo from './logo.svg';
 import './App.css';
