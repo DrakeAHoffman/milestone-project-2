@@ -1,10 +1,12 @@
 import axios from "axios";
-import Ratings from './components/Ratings'
+import ProductList from './components/ProductList';
+
+//import Ratings from './components/Ratings'
 import Rating from './components/Rating'
 
 import logo from './logo.svg';
 import './App.css';
-import { Component } from "react";
+//import { Component } from "react";
 
 function App() {
   return (

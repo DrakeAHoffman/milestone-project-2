@@ -1,5 +1,6 @@
 import { useState } from "react"
-import App from "../App"
+//import App from '../App'
+
 
 import {FaStar} from 'react-icons/fa'
 
@@ -26,4 +27,4 @@ function Ratings () {
     )
 }
 
-export default Ratings
+export default Ratings;
