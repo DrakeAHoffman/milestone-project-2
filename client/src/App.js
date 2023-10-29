@@ -1,11 +1,8 @@
 import axios from "axios";
-
 import ProductList from './components/ProductList';
-
 
 //import Ratings from './components/Ratings'
 import Rating from './components/Rating'
-
 
 import logo from './logo.svg';
 import './App.css';
