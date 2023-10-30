@@ -23,15 +23,9 @@ const ProductList = () => {
     },
     {
       id: 4,
-<<<<<<< HEAD
-      name: 'Apple AirPods Pro',
-      price: 249.99,
-      description: "AirPods Pro are wireless Bluetooth in-ear headphones designed by Apple, initially introduced on October 30, 2019. They are Apple's mid-range wireless headphones, they are available alongside the base-level AirPods and the highest-end AirPods Max.",
-=======
       name: 'Product 3',
       price: 39.99,
       description: 'Description of Product 3',
->>>>>>> b2c1c6006eee12a9f6af18e943508c3de7f784bd
     },
   ];
 

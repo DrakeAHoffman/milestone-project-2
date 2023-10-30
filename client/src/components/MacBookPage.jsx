@@ -1,5 +1,7 @@
 import React from 'react';
 import './MacBookPage.css'; // Import the CSS for styling
+import Rating from './Rating'
+
 
 
 
@@ -31,6 +33,7 @@ Ports: The 13-inch MacBook Pro includes a variety of ports, including Thunderbol
 Audio: It boasts high-quality speakers, producing rich and clear sound. The laptop also features a 3.5mm headphone jack.
 
 Operating System: It runs macOS, Apple's desktop operating system, and is compatible with a wide range of professional software.</p>
+        <Rating stars={3}></Rating>
         <a href="#buy-macbook-13" className="macbook-button">Buy Now</a>
       </div>
 
@@ -54,6 +57,7 @@ Audio: It boasts a six-speaker sound system with force-canceling woofers, delive
 Ports: The 16-inch MacBook Pro includes a variety of ports, including multiple Thunderbolt 3 (USB-C) ports, an HDMI port, and an SD Card slot.
 
 Operating System: Like the 13-inch model, it runs macOS and supports a wide range of professional applications.</p>
+        <Rating stars={2}></Rating>
         <a href="#buy-macbook-16" className="macbook-button">Buy Now</a>
       </div>
     </div>
