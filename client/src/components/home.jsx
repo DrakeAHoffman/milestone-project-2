@@ -2,6 +2,8 @@ import React from 'react';
 import './home.css'; // Import your CSS for styling
 import { Link } from 'react-router-dom';
 
+
+
 const Home = () => {
   const appleLaptops = [
     {
@@ -28,6 +30,8 @@ const Home = () => {
           </ul>
         </nav>
       </header>
+
+   
 
       <div>
      
