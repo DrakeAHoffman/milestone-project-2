@@ -5,7 +5,6 @@ import Rating from './Rating'
 
 
 
-
 const MacBookPage = () => {
   return (
     <div className="macbook-page">
