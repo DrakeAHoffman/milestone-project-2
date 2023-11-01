@@ -1,0 +1,134 @@
+/* Reset some default styles and set a background color */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9900;
+}
+
+/* Main content styles */
+.main-content {
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Product list styles */
+.laptop-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.laptop-item {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  transition: transform 0.3s;
+  margin: 20px;
+
+
+
+
+}
+
+.laptop-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .laptop-list {
+    flex-direction: column;
+  }
+
+  .laptop-item {
+    margin: 20px 0;
+  }
+}
+
+  
+/* Main content styles with background image */
+.main-container {
+  /* Set the background image */
+  background-image: url('home-background.jpg'); /* Replace with the correct image path or URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 82vh; /* Ensure the container covers the full viewport height */
+
+
+ 
+  
+}
+
+
+  

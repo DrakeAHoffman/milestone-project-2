@@ -24,12 +24,14 @@ const ProductList = () => {
       id: 4,
       name: 'Apple AirPods Pro',
       price: 249.99,
-      description: "AirPods Pro are wireless Bluetooth in-ear headphones designed by Apple, initially introduced on October 30, 2019. They are Apple's mid-range wireless headphones, they are available alongside the base-level AirPods and the highest-end AirPods Max.",
+    
     },
   ];
 
   return (
     <div className="product-list">
+      <input  onClick={() => products(ProductList)}>
+  
       <h2>Product List</h2>
       {products.map((product) => (
         <div key={product.id} className="product">
@@ -39,8 +41,10 @@ const ProductList = () => {
           <button>Add to Cart</button>
         </div>
       ))}
+      </input>
     </div>
   );
 };
+
 
 export default ProductList;
