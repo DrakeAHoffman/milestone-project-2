@@ -1,23 +1,22 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "ThatOneGuy1",
-    "database": "milestone",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
-  },
-  "test": {
-    "username": "postgres",
-    "password": "ThatOneGuy1",
-    "database": "milestone_test",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "todos_i0d5_user",
+    "password": "JtnrkNOB1pteoYPxCbcr0KjA03PGasDq",
+    "database": "todos_i0d5",
+    "host": "dpg-ckth6hmnfb1c73d1i7c0-a.oregon-postgres.render.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+     "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
-    "username": "postgres",
-    "password": "ThatOneGuy1",
-    "database": "milestone_production",
-    "host": "127.0.0.1",
+    "username": "todos_i0d5_user",
+    "password": "JtnrkNOB1pteoYPxCbcr0KjA03PGasDq",
+    "database": "todos_i0d5",
+    "host": "dpg-ckth6hmnfb1c73d1i7c0-a.oregon-postgres.render.com",
     "dialect": "postgres"
   }
 }
