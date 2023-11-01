@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 const Comment = ({comment}) => {
-    <div style={{marginTop: '10px'}}>
+    return(
+        <div style={{marginTop: '10px'}}>
         <h4>{comment.author}</h4>
         <p>{comment.text}</p>
     </div>
+    );
 };
 
 const CommentForm = ({addComment}) => {
