@@ -18,7 +18,7 @@ const MacBookPage = () => {
     <div className="macbook-page">
       <h1>MacBook Page</h1>
       <p>Explore the world of MacBook laptops.</p>
-      data.array.forEach(element => {
+      {data.array.forEach(element => {
           <div className="macbook-model">
       
           <h2>{Element.name}</h2>
@@ -27,7 +27,7 @@ const MacBookPage = () => {
           <p>Price: {Element.price}</p>
           <p>Design: {Element.design}</p>
           </div>
-      });
+      })};
     </div>
   );
 };
