@@ -1,7 +1,7 @@
 import React from 'react';
 import './MacBookPage.css'; // Import the CSS for styling
 import Rating from './Rating'
-import CommentSection from './Comments'
+
 
 
 
@@ -13,6 +13,11 @@ const MacBookPage = () => {
       <p>Explore the world of MacBook laptops.</p>
 
       <div className="macbook-model">
+
+      <div>
+        {/* Include the image using the <img> element */}
+        <img src={appleImage} alt="Apple" className="apple-image" />
+      </div>
       
         <h2>Apple MacBook Pro 13-inch</h2>
         <p>Display: 13-inch Retina display</p>
@@ -39,6 +44,12 @@ Operating System: It runs macOS, Apple's desktop operating system, and is compat
       </div>
 
       <div className="macbook-model">
+
+      <div>
+        {/* Include the image using the <img> element */}
+        <img src={appleImage2} alt="Apple" className="apple-image" />
+      </div>
+
         <h2>Apple MacBook Pro 16-inch</h2>
         <p>Display: 16-inch Retina display</p>
         <p>Processor: Intel Core i9</p>
