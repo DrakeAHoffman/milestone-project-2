@@ -6,7 +6,6 @@ import appleImage from './13_inch.jpeg'
 import appleImage2 from './16_inch.jpeg'
 import CommentSection from './Comments';
 
-
 const MacBookPage = () => {
   return (
     <div className="macbook-page">

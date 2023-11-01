@@ -17,7 +17,6 @@ const CommentForm = ({addComment}) => {
         addComment(comment)
         setComment({author: comment.author, text: comment.text})
     }
-
     return (
         <form onSubmit={handleSubmit}>
            <div>
@@ -41,8 +40,7 @@ const CommentForm = ({addComment}) => {
         </form>
     )
 
-}
-
+    }
 const CommentSection = () => {
     const [comments, setComments] = useState([]);
     const addComment = (comment) => {
