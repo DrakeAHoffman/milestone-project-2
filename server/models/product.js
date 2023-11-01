@@ -9,11 +9,11 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate({Rating}) {
+    static associate({Rating,}) {
       // band
       Product.hasMany(Rating, {
         foreignKey: "rating_id",
-        as: "rating"
+        as: "rating",
       })
   }}
   Product.init({
@@ -33,6 +33,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     description: {
       type: DataTypes.STRING,
+      allowNull:false
+    },
+    rating_id: {
+      type: DataTypes.INTEGER,
       allowNull:false
     }
   }, {
