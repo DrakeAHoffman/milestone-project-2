@@ -1,7 +1,7 @@
 import React from 'react';
 import './MacBookPage.css'; // Import the CSS for styling
 import Rating from './Rating'
-
+import CommentSection from './Comments'
 
 
 
@@ -34,6 +34,7 @@ Audio: It boasts high-quality speakers, producing rich and clear sound. The lapt
 
 Operating System: It runs macOS, Apple's desktop operating system, and is compatible with a wide range of professional software.</p>
         <Rating stars={3}></Rating>
+        <CommentSection></CommentSection>
         <a href="#buy-macbook-13" className="macbook-button">Buy Now</a>
       </div>
 
@@ -58,6 +59,7 @@ Ports: The 16-inch MacBook Pro includes a variety of ports, including multiple T
 
 Operating System: Like the 13-inch model, it runs macOS and supports a wide range of professional applications.</p>
         <Rating stars={2}></Rating>
+        <CommentSection></CommentSection>
         <a href="#buy-macbook-16" className="macbook-button">Buy Now</a>
       </div>
     </div>
