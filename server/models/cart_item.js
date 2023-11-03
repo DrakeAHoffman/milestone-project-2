@@ -25,7 +25,8 @@ module.exports = (sequelize, DataTypes) => {
     quantity: {
       type:DataTypes.SMALLINT,
       allowNull: false
-  }, 
+  }
+}, {
     sequelize,
     modelName: 'Cart_Item',
     tableName: 'cart_items'
