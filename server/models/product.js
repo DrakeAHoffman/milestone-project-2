@@ -30,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull:false
     },
+   
     rating_id: {
       type: DataTypes.INTEGER,
       allowNull:false
