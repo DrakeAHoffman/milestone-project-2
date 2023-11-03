@@ -76,7 +76,7 @@ Operating System: Like the 13-inch model, it runs macOS and supports a wide rang
         <Rating stars={2}></Rating>
         <CommentSection/>
         
-        <a onClick={(event) => { event.preventDefault(); navigate("/")}} className="macbook-button">Buy Now </a>
+        <a onClick={(event) => { event.preventDefault(); navigate("/cart")}} className="macbook-button">Buy Now </a>
       </div>
     </div>
   
