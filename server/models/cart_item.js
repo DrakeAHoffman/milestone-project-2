@@ -25,10 +25,12 @@ module.exports = (sequelize, DataTypes) => {
     quantity: {
       type:DataTypes.SMALLINT,
       allowNull: false
-  }, 
+  }
+}, {
     sequelize,
     modelName: 'Cart_Item',
-    tableName: 'cart_items'
+    tableName: 'cart_items',
+    timestamps:false,
   });
   return Cart_Item;
 };

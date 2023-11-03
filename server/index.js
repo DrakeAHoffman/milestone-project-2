@@ -3,6 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const { registerUser, loginUser, logoutUser } = require("./user");
 const { listTodosForUser, createTodoForUser, updateTodoItem, deleteTodoItem } = require("./todo");
+const { Cart_Item } = require("./models");
 
 dotenv.config();
 
@@ -130,6 +131,10 @@ app.delete("/todos/:id", express.json(), async (req, res) => {
             error: err.message,
         });
     }
+});
+app.get("/cart", express.json(), async (req, res) => {
+    const cartItems = await Cart_Item.findAll();
+    res.json(cartItems);
 });
 
 app.listen(port, () => {
