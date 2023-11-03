@@ -3,13 +3,14 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const { registerUser, loginUser, logoutUser } = require("./user");
 const { listTodosForUser, createTodoForUser, updateTodoItem, deleteTodoItem } = require("./todo");
+const { Cart_Item } = require("./models");
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3003;
 
 app.get("/", (req, res) => {
     res.send({
@@ -130,6 +131,10 @@ app.delete("/todos/:id", express.json(), async (req, res) => {
             error: err.message,
         });
     }
+});
+app.get("/cart", express.json(), async (req, res) => {
+    const cartItems = await Cart_Item.findAll();
+    res.json(cartItems);
 });
 
 app.listen(port, () => {
