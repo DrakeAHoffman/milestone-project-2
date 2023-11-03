@@ -49,7 +49,6 @@ const CommentSection = () => {
 
     return (
         <div>
-            <h2>Product Comments</h2>
             <CommentForm addComment={addComment}></CommentForm>
             {comments.map((c, i) => (
                 <Comment key={i} comment={c}></Comment>

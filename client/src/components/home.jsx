@@ -31,7 +31,7 @@ const Home = () => {
         </nav>
       </header>
 
-      {/* Set the background image for your main container */}
+
       <div
         className="main-container"
         style={{ backgroundImage: `url(${backgroundImage})` }}
