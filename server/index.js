@@ -133,9 +133,51 @@ app.delete("/todos/:id", express.json(), async (req, res) => {
     }
 });
 app.get("/cart", express.json(), async (req, res) => {
-    const cartItems = await Cart_Item.findAll();
-    res.json(cartItems);
+    try {
+        const cartItems = await Cart_Item.findAll({order:[["id","ASC"]]});
+        res.json(cartItems);
+    } catch (err) {
+        res.status(400).json({ message: 'error fetching items'});
+    }
 });
+
+app.post("/cart", express.json(), async (req, res) => {
+ try {
+    const { name, price, quantity } = req.body;
+    const newCartItem = await Cart_Item.create({ name, price, quantity });
+    res.json(newCartItem);
+ } catch (err) {
+    res.status(400).json({ message: 'error creating item'});
+ }
+});
+
+app.patch("/cart/:id", express.json(), async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { quantity } = req.body;
+    const cartItem = await Cart_Item.findByPk(id);
+    cartItem.quantity = parseInt(quantity);
+    await cartItem.save();
+    res.json(cartItem);
+  } catch (err) {
+    res.status(400).json({ message: 'error updating item'});
+  }
+});
+
+app.delete("/cart/:id", express.json(), async (req, res) => {
+    try {
+        const { id } = req.params;
+        const cartItem = await Cart_Item.findByPk(id);
+        await cartItem.destroy();
+        res.json({message: 'Item deleted'});
+    } catch (err) {
+        res.status(400).json({ message: 'error deleting item'});
+    }
+
+    
+});
+
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

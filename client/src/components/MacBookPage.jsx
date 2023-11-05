@@ -5,6 +5,8 @@ import appleImage from './13_inch.jpeg'
 import appleImage2 from './16_inch.jpeg'
 import CommentSection from './Comments';
 import { useNavigate } from 'react-router-dom';
+import BuyNow from './BuyNow'
+
 
  const MacBookPage = () => {
   const navigate = useNavigate();
@@ -13,8 +15,7 @@ import { useNavigate } from 'react-router-dom';
     
     
     <div className="macbook-page">
-      <h1>MacBook Page</h1>
-      <p>Explore the world of MacBook laptops.</p>
+      <p>Explore the world of MacBook laptops</p>
 
       <div className="macbook-model">
 
@@ -42,11 +43,17 @@ Ports: The 13-inch MacBook Pro includes a variety of ports, including Thunderbol
 Audio: It boasts high-quality speakers, producing rich and clear sound. The laptop also features a 3.5mm headphone jack.
 
 Operating System: It runs macOS, Apple's desktop operating system, and is compatible with a wide range of professional software.</p>
-        <Rating stars={3}></Rating>
-        <CommentSection/>
-        <a onClick={(event) => { event.preventDefault(); navigate("/cart")}} className="macbook-button">Buy Now </a>
+       
+        <a onClick={(event) => { event.preventDefault(); navigate("/cart")}} className="macbook-button"> </a>
       </div>
-
+      <Rating/>
+    <CommentSection/>
+       <BuyNow
+       name= "MacBook Pro 13-inch"
+       price= "1299.00"
+       quantity= "1"
+       /> 
+     
       <div className="macbook-model">
 
       <div>
@@ -73,10 +80,15 @@ Audio: It boasts a six-speaker sound system with force-canceling woofers, delive
 Ports: The 16-inch MacBook Pro includes a variety of ports, including multiple Thunderbolt 3 (USB-C) ports, an HDMI port, and an SD Card slot.
 
 Operating System: Like the 13-inch model, it runs macOS and supports a wide range of professional applications.</p>
-        <Rating stars={2}></Rating>
-        <CommentSection/>
-        
-        <a onClick={(event) => { event.preventDefault(); navigate("/")}} className="macbook-button">Buy Now </a>
+
+ <a onClick={(event) => { event.preventDefault(); navigate("/cart")}} className="macbook-button"> </a>
+     <Rating/>
+     <CommentSection/>
+     <BuyNow
+       name= "MacBook Pro 16-inch"
+       price= "2399.00"
+       quantity= "1"
+       /> 
       </div>
     </div>
   

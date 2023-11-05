@@ -20,6 +20,10 @@ const Home = () => {
     },
   ];
 
+  const appleInfo = "Apple Inc. is a renowned technology company known for its commitment to innovation and design excellence. With a focus on creating products that are user-friendly and aesthetically pleasing, Apple has redefined the tech industry. Their products, including MacBooks, have set new standards for performance, style, and environmental responsibility.";
+  
+
+
   return (
     <div className="apple-homepage">
       <header className="header">
@@ -37,7 +41,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <section className="main-content">
-          <h1>Apple Mac Laptops</h1>
+        <h1>Apple Mac Laptops</h1>
           <ul className="laptop-list">
             {appleLaptops.map((laptop, index) => (
               <li key={index} className="laptop-item">
@@ -48,6 +52,7 @@ const Home = () => {
               </li>
             ))}
           </ul>
+          <p className="apple-info">{appleInfo}</p>
         </section>
       </div>
 
