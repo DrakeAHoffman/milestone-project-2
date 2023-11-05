@@ -1,11 +1,13 @@
 
 .item-name {
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .item-details {
     display: flex;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .item-price {
