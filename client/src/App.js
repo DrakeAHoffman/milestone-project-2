@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Routes> {/* Use 'Routes' instead of 'Switch' */}
+        <Routes> { " "}
           <Route path="/" element={<Home />} />
           <Route path="/macbooks" element={<MacBookPage/>} />
           <Route path="/cart" element={<ShoppingCart/>} />

@@ -13,7 +13,6 @@ import { useNavigate } from 'react-router-dom';
     
     
     <div className="macbook-page">
-      <h1>MacBook Page</h1>
       <p>Explore the world of MacBook laptops.</p>
 
       <div className="macbook-model">
