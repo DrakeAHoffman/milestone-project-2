@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './ShoppingCart.css'
+import ShoppingCartItem from "./ShoppingCartItem";
+import "./ShoppingCart.css";
 
 const ShoppingCart = () => {
     const [cartItems, setCartItems] = useState([]);
     const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3003";
 
-    useEffect(() => {
-       
+    const loadShoppingCartItems = () => {
         axios
             .get(`${API_URL}/cart`)
             .then((response) => {
@@ -16,24 +16,20 @@ const ShoppingCart = () => {
             .catch((error) => {
                 console.log(error);
             });
-    }, [API_URL]);
+    };
+
+    useEffect(loadShoppingCartItems, []);
 
     return (
         <div className="shopping-cart">
             <h2 className="cart-heading">Shopping Cart</h2>
             <ul className="cart-list">
                 {cartItems.map((item) => (
-                    <li key={item.id} className="cart-item">
-                        <span className="item-name">{item.name}</span>
-                        <span className="item-details">
-                            <span className="item-price">${item.price}</span>
-                            <span className="item-quantity">{item.quantity}x</span>
-                        </span>
-                    </li>
+                    <ShoppingCartItem item={item} refreshPage={loadShoppingCartItems} />
                 ))}
             </ul>
         </div>
     );
 };
 
-export default ShoppingCart; 
+export default ShoppingCart;

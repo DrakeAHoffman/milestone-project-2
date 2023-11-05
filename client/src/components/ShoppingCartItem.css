@@ -1,0 +1,17 @@
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.item-price {
+    margin-right: 10px;
+}
+
+.item-quantity {
+    color: #888;
+}
