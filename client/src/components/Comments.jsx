@@ -3,30 +3,22 @@ import React, { useState, useEffect } from "react";
 const Comment = ({comment}) => {
     return (
     <div style={{marginTop: '10px'}}>
-        <h4>{comment.author}</h4>
         <p>{comment.text}</p>
     </div>
     );
 };
 
 const CommentForm = ({addComment}) => {
-    const [comment, setComment] = useState({author: '', text: ''});
+    const [comment, setComment] = useState({ text: ''});
 
     const handleSubmit = (e) => {
         e.preventDefault(); // todo:: check this action
         addComment(comment)
-        setComment({author: comment.author, text: comment.text})
+        setComment({text: comment.text})
     }
     return (
         <form onSubmit={handleSubmit}>
-           <div>
-                <input
-                    type="text"
-                    value={comment.author}
-                    onChange={(e) => setComment({ ...comment, author: e.target.value })}
-                >
-                </input>
-           </div>
+          
            <div>
                 <textarea
                     value={comment.text}
