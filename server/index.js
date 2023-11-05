@@ -137,6 +137,14 @@ app.get("/cart", express.json(), async (req, res) => {
     res.json(cartItems);
 });
 
+app.post("/cart", express.json(), async (req, res) => {
+    const { name, price, quantity } = req.body;
+    const newCartItem = await Cart_Item.create({ name, price, quantity });
+    res.json(newCartItem);
+});
+
+
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
