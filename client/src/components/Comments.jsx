@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import './Comments.css'
 const Comment = ({comment}) => {
     return (
     <div style={{marginTop: '10px'}}>
@@ -21,13 +21,14 @@ const CommentForm = ({addComment}) => {
           
            <div>
                 <textarea
+                className="textarea"
                     value={comment.text}
                     onChange={(e) => setComment({ ...comment, text: e.target.value })}
                     placeholder="Add a comment"
                 ></textarea>
             </div>
             <div>
-                <button type="submit">Add Comment</button>
+                <button type="submit" className="comment-button">Add Comment</button>
             </div>   
         </form>
     )

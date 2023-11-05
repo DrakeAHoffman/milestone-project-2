@@ -1,15 +1,21 @@
-.button{
-    background-color: #007BFF;
-    color: #fff;
+.comment-button{
+    border: 1px solid #007BFF;
+    color: #007BFF;
     font-size: 16px;
     padding: 10px 20px;
-    border: none;
     cursor: pointer;
     margin-top: 20px;
     display: inline-block;
     text-decoration: none;
+    border-radius: 20px;
   }
   
-  .button:hover {
+  .comment-button:hover {
     background-color: #0056B3;
+  }
+
+  .textarea {
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
   }
