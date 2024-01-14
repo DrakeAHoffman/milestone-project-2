@@ -1,0 +1,142 @@
+
+
+@import 'variables';
+@import 'mixins';
+@import 'buttons';
+
+
+
+
+
+// Colors
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$background-color: #ecf0f1;
+$text-color: #333;
+
+// Font sizes
+$base-font-size: 16px;
+$heading1-font-size: 2rem;
+$heading2-font-size: 1.5rem;
+$heading3-font-size: 1.2rem;
+
+// Spacing
+$padding: 10px;
+$margin: 20px;
+
+// Border radius
+$border-radius: 5px;
+
+// Box shadow
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Example SCSS with nested selectors and & usage
+
+.container {
+    width: 100%;
+  
+    &__header {
+      background-color: #3498db;
+      color: #fff;
+  
+      &-title {
+        font-size: 1.5rem;
+      }
+  
+      &-subtitle {
+        font-size: 1rem;
+      }
+    }
+  
+    &__main-content {
+      padding: 20px;
+  
+      &-section {
+        margin-bottom: 10px;
+  
+        &__title {
+          font-size: 1.2rem;
+        }
+  
+        &__paragraph {
+          line-height: 1.5;
+        }
+      }
+    }
+  
+    &__footer {
+      background-color: #2ecc71;
+      color: #fff;
+    }
+  }
+
+  @function em-to-rem($value, $base: 16px) {
+    @return $value / $base * 1rem;
+  }
+
+  @function color-brightness($color) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+  
+    @return 0.299 * $r + 0.587 * $g + 0.114 * $b;
+  }
+
+  @function scale-font-size($base-size, $scale-factor) {
+    @return $base-size * $scale-factor;
+  }
+
+  @function contrast-color($color, $threshold: 128) {
+    @if (color-brightness($color) > $threshold) {
+      @return #000;
+    } @else {
+      @return #fff;
+    }
+  }
+
+  .element {
+    font-size: em-to-rem(18px);
+    background-color: #3498db;
+    color: contrast-color(#3498db);
+  }
+  
+  .another-element {
+    font-size: scale-font-size(16px, 1.2);
+  }
+
+  $theme: light;
+
+.element {
+  @if $theme == light {
+    background-color: #fff;
+    color: #333;
+  } @else {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+.grid {
+    @for $i from 1 through 3 {
+      .grid-item-#{$i} {
+        width: 100px * $i;
+      }
+    }
+  }
+
+  $colors: #3498db, #2ecc71, #e74c3c;
+
+  $font-size: 12px;
+
+  .increasing-font {
+    @while $font-size < 24px {
+      font-size: $font-size;
+      $font-size: $font-size + 2px;
+    }
+  }
+  
+
+  
+
+  
