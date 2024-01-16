@@ -1,0 +1,77 @@
+.primary-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-button {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 100%;
+}
+.container__header {
+  background-color: #3498db;
+  color: #fff;
+}
+.container__header-title {
+  font-size: 1.5rem;
+}
+.container__header-subtitle {
+  font-size: 1rem;
+}
+.container__main-content {
+  padding: 20px;
+}
+.container__main-content-section {
+  margin-bottom: 10px;
+}
+.container__main-content-section__title {
+  font-size: 1.2rem;
+}
+.container__main-content-section__paragraph {
+  line-height: 1.5;
+}
+.container__footer {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.element {
+  font-size: 1.125rem;
+  background-color: #3498db;
+  color: #000;
+}
+
+.another-element {
+  font-size: 19.2px;
+}
+
+.element {
+  background-color: #fff;
+  color: #333;
+}
+
+.grid .grid-item-1 {
+  width: 100px;
+}
+.grid .grid-item-2 {
+  width: 200px;
+}
+.grid .grid-item-3 {
+  width: 300px;
+}
+
+.increasing-font {
+  font-size: 12px;
+  font-size: 14px;
+  font-size: 16px;
+  font-size: 18px;
+  font-size: 20px;
+  font-size: 22px;
+}/*# sourceMappingURL=styles.css.map */

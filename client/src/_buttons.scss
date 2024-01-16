@@ -1,0 +1,16 @@
+// _buttons.scss
+
+.primary-button {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    @include box-shadow;
+  }
+  
+  .secondary-button {
+    background-color: $secondary-color;
+    color: #fff;
+    padding: 8px 16px;
+    @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.2));
+  }
+  

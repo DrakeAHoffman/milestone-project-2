@@ -1,0 +1,17 @@
+// _variables.scss
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$base-font-size: 16px;
+
+
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+// Example usage of @error directive
+@if $primary-color == $secondary-color {
+  @error "Primary and secondary colors cannot be the same.";
+}
+
+
